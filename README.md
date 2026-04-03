@@ -18,7 +18,7 @@ A simple Python script that generates a strong random password and saves it to a
 ## 🚀 How to Run
 
 ```bash
-python password_generator.py
+python pass_gen.py
 ```
 
 ## 🧑‍💻 Usage
