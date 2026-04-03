@@ -25,7 +25,18 @@ def generate_password(length):
     return ''.join(password)
 
 try:
+    username = input("Enter username: ")
     length = int(input("Enter the desired password length: "))
-    print("Generated Password:", generate_password(length))
+
+    password = generate_password(length)
+
+    print("Generated Password:", password)
+
+    # Save to file
+    with open("passwords.txt", "a") as file:
+        file.write(f"Username: {username} | Password: {password}\n")
+
+    print("Saved to passwords.txt successfully.")
+
 except ValueError:
     print("Please enter a valid number.")
